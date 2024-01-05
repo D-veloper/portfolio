@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nnadi Praise's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e8b14c91c1.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" alt="Praise Logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Skills</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-text">
+                    <p>RPA Developer @ GTB UK. Grad Student</p>
+                    <h1>Hello! I'm <span>Praise</span><br> Nnadi.</h1>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------about me section-------------------------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png" alt="Image of Praise">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Computer science student and Robotics enthusiast, I graduated from Plymouth University in 2020 
+                            with a Bachelor's in Robotics. <br><br>Currently pursuing a Master's in Computer Science, specializing in 
+                            Artificial Intelligence, at the University of Nottingham. I also work part-time as an RPA 
+                            Developer for Guaranty Trust Bank UK. <br><br> With a passion for AI, machine learning, robotics
+                            and software development, I'm commited to staying at the forefront of technological advancements.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills (Overview)</p>
+                                <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            
+                            <!--skills-->
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Python</span><br>Object oriented programming in Python.</li>
+                                    <li><span>C++</span><br>Object oriented programming in C++.</li>
+                                    <li><span>MySQL</span><br>Database manipulation using MySQL.</li>
+                                    <li><span>Lua</span><br>Game development in Lua.</li>
+                                </ul>
+                            </div>
+
+                            <!--Work Experience-->                            <!--skills-->
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2023 - Present</span><br>RPA Development at Guaranty Trust Bank UK.</li>
+                                </ul>
+                            </div>
+
+                            <!--Education-->
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2023 - Present</span><br>MSC Computer Science (AI) at University of Nottingham.</li>
+                                    <li><span>2017 - 2020</span><br>BEng Robotics at Plymouth University.</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- -------------------- Skills -------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2> Python</h2>
+                    <p>With 6 months of focused Object-Oriented Programming (OOP) in Python, I've collaborated with a
+                    team to implement a Rummikub variant as part of my programming coursework. 
+                    Delving into AI, I've implemented a genetic algorithm for string guessing, covering words and sentences, as part 
+                    of a personal project. Additionally, I reinforce my skills through regular practice on platforms like 
+                    Hackerrank and CodingGame. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2> MySQL</h2>
+                    <p>With 3 months of hands-on experience, my proficiency in MySQL revolves around practical applications. As 
+                    part of my coursework, I utilized SQL to manipulate data in a traffic incident management system, showcasing 
+                    the ability to implement database concepts in real-world scenarios. Additionally, in my role as an RPA Developer, 
+                    I regularly leverage MySQL queries for effective database manipulation. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> C++</h2>
+                    <p>Self-taught and relatively new to C++, my focus here lies in mastering the syntax and honing 
+                    strong functional programming skills. While yet to delve into Object-Oriented Programming, my command over C++ is 
+                    evident in practical applications. Regular practice on platforms like Hackerrank and CodinGame ensures a solid 
+                    understanding and proficiency in leveraging C++ for problem-solving and algorithmic challenges. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Lua</h2>
+                    <p>Self-taught in Lua, I've delved into Object-Oriented Programming, utilizing it to develop a game on Roblox. 
+                    Regular problem-solving sessions on Hackerrank and CodinGame serve as my ongoing learning grounds to raise my 
+                    proficiency in Lua. </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- My Projects -------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png" alt="Rummikub Game">
+                    <div class="layer">
+                        <h3>Rummikub Game</h3>
+                        <p>I lead a team of five students for a Rummikub Python project. My role as Team Leader involved meticulous organization, 
+                        effective task distribution, and setting clear deadlines. Strategic project planning and time management ensured concurrent 
+                        frontend and backend development within our three-week timeline. Comprehensive research in the early phase facilitated the 
+                        smooth implementation of the game design in pygame. Conflict resolution skills addressed challenges, maintaining a positive 
+                        team dynamic. My technical contributions included initialising the Gameboard class, implementing the AI player and autoplay
+                        functionality, integrating sound effects, and helping resolve various logical errors.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="Rummikub Game">
+                    <div class="layer">
+                        <h3>Work 2</h3>
+                        <p>Work 2 description. blah. blah.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="Rummikub Game">
+                    <div class="layer">
+                        <h3>Work 3</h3>
+                        <p>Work 3 description. blah. blah. blah. blah.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/D-veloper" class="btn"> See more</a>
+
+        </div>
+    </div>
+
+    <!-- -------------------- Contact Me -------------------- add linked in link -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>praise.nnadi00@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>(+44) 7438 444 250</p>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/D-veloper"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.hackerrank.com/profile/praise_nnadi00"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://www.codingame.com/profile/c03d75a559444987a6f560ae524747454976285"><i class="fa-solid fa-gamepad"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Eame" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Praise. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzEdvPLcaihllFyPHkqGb-Rt1xALrntg4JGLz5MVl87lFtVBt804h6eU2bMb6ui6bDJYQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    </body>
+</html>
